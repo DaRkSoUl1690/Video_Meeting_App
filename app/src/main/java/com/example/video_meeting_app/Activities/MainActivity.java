@@ -147,13 +147,11 @@ public class MainActivity extends AppCompatActivity implements UserListener {
         } else {
             Toast.makeText(this, user.firstName + " " + user.lastName + " is  available for meeting", Toast.LENGTH_SHORT).show();
 
-            /**
-             * Intent intent = new Intent(getApplicationContext(), OutgoingMeetingInvitation.class);
-             * intent.putExtra("user", user);
-             *intent.putExtra("type", "video");
-             *startActivity(intent);
-             */
 
+            Intent intent = new Intent(getApplicationContext(), OutgoingInvitationActivity.class);
+            intent.putExtra("user", user);
+            intent.putExtra("type", "video");
+            startActivity(intent);
         }
     }
 
@@ -166,10 +164,10 @@ public class MainActivity extends AppCompatActivity implements UserListener {
         } else {
             Toast.makeText(this, user.firstName + " " + user.lastName + " is available for meeting", Toast.LENGTH_SHORT).show();
 
-//            Intent intent = new Intent(getApplicationContext(), OutgoingMeetingInvitation.class);
-//            intent.putExtra("user", user);
-//            intent.putExtra("type", "audio");
-//            startActivity(intent);
+            Intent intent = new Intent(getApplicationContext(), OutgoingInvitationActivity.class);
+            intent.putExtra("user", user);
+            intent.putExtra("type", "audio");
+            startActivity(intent);
         }
     }
 
