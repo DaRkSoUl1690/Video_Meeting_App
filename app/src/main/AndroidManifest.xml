@@ -15,15 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Video_Meeting_App"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        tools:targetApi="s">
+        <activity android:name=".Activities.IncomingInvitationActivity" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.OutgoingInvitationActivity" />
         <activity
-            android:name=".OutgoingInvitationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IncomingInvitationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activites.SignInActivity"
+            android:name=".Activities.SignInActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
@@ -34,14 +31,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activites.SignUpActivity"
-            android:exported="false"
+            android:name=".Activities.SignUpActivity"
+
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Activites.MainActivity"
-            android:exported="true"
-            android:screenOrientation="portrait" />
 
         <service
             android:name=".Firebase.MessagingService"

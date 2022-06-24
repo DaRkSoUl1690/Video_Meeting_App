@@ -1,4 +1,4 @@
-package com.example.video_meeting_app;
+package com.example.video_meeting_app.Adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.video_meeting_app.Listeners.UserListener;
 import com.example.video_meeting_app.Model.User;
+import com.example.video_meeting_app.R;
 
 import java.util.ArrayList;
 import java.util.List;

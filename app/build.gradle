@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.example.video_meeting_app"
         minSdk 21
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -69,5 +69,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.1.2'
 
     // Jit si Meet
-//    implementation('org.jitsi.react:jitsi-meet-sdk:2.8.2') { transitive = true }
+//    implementation('org.jitsi.react:jitsi-meet-sdk:5.1.0') { transitive = true }
 }

@@ -1,4 +1,4 @@
-package com.example.video_meeting_app.Activites;
+package com.example.video_meeting_app.Activities;
 
 import android.os.Bundle;
 
@@ -8,6 +8,7 @@ import com.example.video_meeting_app.databinding.ActivityIncomingInvitationBindi
 
 public class IncomingInvitationActivity extends AppCompatActivity {
 
+
     ActivityIncomingInvitationBinding binding;
 
     @Override
@@ -15,7 +16,5 @@ public class IncomingInvitationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityIncomingInvitationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-
     }
 }
